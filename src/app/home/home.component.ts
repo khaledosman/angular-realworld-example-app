@@ -1,7 +1,8 @@
-import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable, of } from 'rxjs';
 
-import { ArticleListConfig, TagsService, UserService } from '../core';
+import { ArticleListConfig, GpsLocationService, TagsService, UserService, WeatherService } from '../core';
 
 @Component({
   selector: 'app-home-page',
@@ -14,8 +15,11 @@ export class HomeComponent implements OnInit {
     private router: Router,
     private tagsService: TagsService,
     private userService: UserService,
-    private cd: ChangeDetectorRef
-  ) {}
+    private cd: ChangeDetectorRef,
+    private gpsLocationService: GpsLocationService,
+    private weatherService: WeatherService,
+    private cdr: ChangeDetectorRef
+  ) { }
 
   isAuthenticated: boolean;
   listConfig: ArticleListConfig = {
@@ -24,6 +28,8 @@ export class HomeComponent implements OnInit {
   };
   tags: Array<string> = [];
   tagsLoaded = false;
+  weatherData = [];
+  weather: Observable<any>;
 
   ngOnInit() {
     this.userService.isAuthenticated.subscribe(
@@ -45,6 +51,25 @@ export class HomeComponent implements OnInit {
       this.tags = tags;
       this.tagsLoaded = true;
       this.cd.markForCheck();
+    });
+
+
+    this.weather = of(this.weatherData);
+    this.gpsLocationService.getPosition().then(pos => {
+        console.log(pos);
+        this.weatherService.getWeather(pos.lng, pos.lat).subscribe(data => {
+          const weatherData = {
+            name: data.weather[0].main,
+            temp: data.main.temp,
+          };
+          console.log(weatherData);
+          this.weatherData.forEach((val, index) => {
+            this.weatherData.splice(index, 1);
+          });
+          this.weatherData.push(weatherData.name);
+          this.weatherData.push(weatherData.temp + ' C');
+          this.cdr.detectChanges();
+        });
     });
   }
 

@@ -40,6 +40,13 @@
 
       <div class="col-md-3">
         <div class="sidebar">
+          <div>
+            <strong>Current Weather</strong>
+            <p *ngFor="let prop of weather | async">
+              {{ prop }}
+            </p>
+          </div>
+
           <p>Popular Tags</p>
 
           <div class="tag-list">
