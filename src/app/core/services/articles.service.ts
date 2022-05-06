@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { ApiService } from './api.service';
 import { Article, ArticleListConfig } from '../models';
 import { map } from 'rxjs/operators';
+import { CatFact } from '../models/cat-fact.model';
 
 @Injectable({
   providedIn: 'root'
@@ -58,6 +59,10 @@ export class ArticlesService {
 
   unfavorite(slug): Observable<Article> {
     return this.apiService.delete('/articles/' + slug + '/favorite');
+  }
+
+  getInspiration(): Observable<CatFact> {
+    return this.apiService.getCatFact();
   }
 
 

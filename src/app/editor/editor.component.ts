@@ -1,6 +1,7 @@
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { take } from 'rxjs';
 
 import { Article, ArticlesService } from '../core';
 
@@ -89,5 +90,14 @@ export class EditorComponent implements OnInit {
 
   updateArticle(values: Object) {
     Object.assign(this.article, values);
+  }
+
+  getInspiration() {
+    this.articlesService.getInspiration().pipe(
+      take(1),
+    )
+    .subscribe(res => {
+      this.articleForm.get('body').setValue(res.text);
+    })
   }
 }
