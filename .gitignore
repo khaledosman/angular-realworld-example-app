@@ -38,6 +38,7 @@ yarn-error.log
 
 # e2e
 /e2e/*.js
+# je casse tout chez toi
 /e2e/*.map
 
 # System Files
