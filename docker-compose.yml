@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  # Environnement de staging
+  app-staging:
+    image: angular-app:staging
+    container_name: app-staging
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  # Environnement de production
+  app-production:
+    image: angular-app:production
+    container_name: app-production
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
