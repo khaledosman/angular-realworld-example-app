@@ -5,12 +5,10 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-  # Ajout d'un déclencheur manuel pour faciliter les tests
   workflow_dispatch:
 
 jobs:
   build-and-test:
-    # Spécifie d'utiliser votre runner auto-hébergé au lieu des runners GitHub
     runs-on: self-hosted
 
     steps:
@@ -20,13 +18,34 @@ jobs:
     - name: Log Node.js version
       run: node --version
 
-    - name: Log available disk space
-      run: |
-        echo "Checking available disk space:"
-        df -h
+    - name: Cache node modules
+      uses: actions/cache@v3
+      id: npm-cache
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
 
     - name: Install dependencies
-      run: npm ci -force
+      if: steps.npm-cache.outputs.cache-hit != 'true'
+      run: npm ci
 
     - name: Run tests
       run: npm test -- --watch=false --browsers=ChromeHeadless --no-progress
+
+    - name: Build application
+      run: npm run build -- --configuration production
+
+  cleanup:
+    runs-on: self-hosted
+    needs: build-and-test
+    if: always()
+
+    steps:
+    - name: Clean workspace
+      run: |
+        echo "Cleaning workspace to free up disk space"
+        rm -rf node_modules || true
+        rm -rf dist || true
+        npm cache clean --force || true
