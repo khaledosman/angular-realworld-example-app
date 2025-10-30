@@ -1,16 +1,19 @@
 # Déploiement automatisé avec CI/CD
 
-Ce document décrit comment configurer le déploiement automatisé via GitHub Actions.
+Ce document décrit la configuration du déploiement automatisé.
 
-## Avantages du CI/CD
+## Pipeline CI/CD
 
-- Déploiement automatique à chaque push sur main
-- Vérification de qualité systématique
-- Cohérence entre environnements
-- Traçabilité des déploiements
+Notre application utilise GitHub Actions pour automatiser le déploiement.
 
 ## Configuration requise
 
-- Compte GitHub
-- Docker Hub
-- Serveur de production
+- Secrets GitHub pour les credentials Docker Hub
+- Secrets GitHub pour l'accès SSH au serveur
+
+## Étapes du pipeline
+
+1. Compilation et tests
+2. Construction de l'image Docker
+3. Push vers Docker Hub
+4. Déploiement automatique en production
