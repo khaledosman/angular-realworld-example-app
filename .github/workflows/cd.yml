@@ -1,0 +1,68 @@
+name: Continuous Deployment
+
+on:
+  # Déclenché manuellement ou après un merge sur main
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  # Job de construction de l'image
+  build:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Build Docker image
+      run: |
+        echo "Building Docker image..."
+        docker build -t angular-app:${{ github.sha }} .
+
+    - name: Tag images for environments
+      run: |
+        docker tag angular-app:${{ github.sha }} angular-app:staging
+        docker tag angular-app:${{ github.sha }} angular-app:production
+
+  # Déploiement en staging
+  deploy-staging:
+    needs: build
+    runs-on: self-hosted
+    environment: staging
+
+    steps:
+    - name: Deploy to staging
+      run: |
+        echo "Deploying to staging environment..."
+        docker-compose up -d app-staging
+        echo "Deployment to staging completed."
+
+    - name: Verify staging deployment
+      run: |
+        echo "Verifying staging deployment..."
+        # Attendre que l'application soit prête
+        sleep 5
+        # Vérifier que l'application répond
+        curl -s http://localhost:8080 | grep -q "conduit" && echo "✅ Application is running correctly in staging" || (echo "❌ Staging verification failed" && exit 1)
+
+  # Déploiement en production
+  deploy-production:
+    needs: deploy-staging
+    runs-on: self-hosted
+    environment: production
+
+    steps:
+    - name: Deploy to production
+      run: |
+        echo "Deploying to production environment..."
+        docker-compose up -d app-production
+        echo "Deployment to production completed."
+
+    - name: Verify production deployment
+      run: |
+        echo "Verifying production deployment..."
+        # Attendre que l'application soit prête
+        sleep 5
+        # Vérifier que l'application répond
+        curl -s http://localhost:80 | grep -q "conduit" && echo "✅ Application is running correctly in production" || (echo "❌ Production verification failed" && exit 1)
