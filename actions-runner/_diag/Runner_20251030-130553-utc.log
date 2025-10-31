@@ -1,0 +1,135 @@
+[2025-10-30 13:05:53Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin'
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner'
+[2025-10-30 13:05:53Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.credentials'
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin'
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner'
+[2025-10-30 13:05:53Z INFO HostContext] Well known config file 'Runner': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.runner'
+[2025-10-30 13:05:53Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2025-10-30 13:05:53Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26200.
+[2025-10-30 13:05:53Z INFO Listener] Version: 2.329.0
+[2025-10-30 13:05:53Z INFO Listener] Commit: c76c59996c8fa32e989164a5a695efb12608ae5a
+[2025-10-30 13:05:53Z INFO Listener] Culture: fr-FR
+[2025-10-30 13:05:53Z INFO Listener] UI Culture: fr-FR
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin'
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner'
+[2025-10-30 13:05:53Z INFO Listener] Validating directory permissions for: 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner'
+[2025-10-30 13:05:53Z INFO CommandLineParser] Parse
+[2025-10-30 13:05:53Z INFO CommandLineParser] Parsing 1 args
+[2025-10-30 13:05:53Z INFO CommandLineParser] parsing argument
+[2025-10-30 13:05:53Z INFO CommandLineParser] HasArgs: False
+[2025-10-30 13:05:53Z INFO CommandLineParser] Adding Command: run
+[2025-10-30 13:05:53Z INFO Listener] Arguments parsed
+[2025-10-30 13:05:53Z INFO Runner] ExecuteCommand
+[2025-10-30 13:05:53Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin\Runner.Listener.dll
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin'
+[2025-10-30 13:05:53Z INFO ConfigurationStore] binPath: C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin'
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner'
+[2025-10-30 13:05:53Z INFO ConfigurationStore] RootFolder: C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin'
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner'
+[2025-10-30 13:05:53Z INFO HostContext] Well known config file 'Runner': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.runner'
+[2025-10-30 13:05:53Z INFO ConfigurationStore] ConfigFilePath: C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.runner
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin'
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner'
+[2025-10-30 13:05:53Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.runner_migrated'
+[2025-10-30 13:05:53Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.runner_migrated
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin'
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner'
+[2025-10-30 13:05:53Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.credentials'
+[2025-10-30 13:05:53Z INFO ConfigurationStore] CredFilePath: C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.credentials
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin'
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner'
+[2025-10-30 13:05:53Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.credentials_migrated'
+[2025-10-30 13:05:53Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.credentials_migrated
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin'
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner'
+[2025-10-30 13:05:53Z INFO HostContext] Well known config file 'Service': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.service'
+[2025-10-30 13:05:53Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.service
+[2025-10-30 13:05:53Z INFO CommandSettings] Flag 'help': 'False'
+[2025-10-30 13:05:53Z INFO CommandSettings] Flag 'version': 'False'
+[2025-10-30 13:05:53Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-10-30 13:05:53Z INFO CommandSettings] Flag 'check': 'False'
+[2025-10-30 13:05:53Z INFO CommandSettings] Command 'configure': 'False'
+[2025-10-30 13:05:53Z INFO CommandSettings] Command 'remove': 'False'
+[2025-10-30 13:05:53Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-10-30 13:05:53Z INFO ConfigurationManager] LoadSettings
+[2025-10-30 13:05:53Z INFO ConfigurationStore] IsConfigured()
+[2025-10-30 13:05:53Z INFO ConfigurationStore] IsConfigured: True
+[2025-10-30 13:05:53Z INFO ConfigurationManager] Is configured: True
+[2025-10-30 13:05:53Z INFO ConfigurationStore] Read setting file: 420 chars
+[2025-10-30 13:05:53Z INFO ConfigurationManager] Settings Loaded
+[2025-10-30 13:05:53Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-10-30 13:05:53Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-10-30 13:05:53Z INFO CommandSettings] Command 'run': 'True'
+[2025-10-30 13:05:53Z INFO ConfigurationStore] IsConfigured()
+[2025-10-30 13:05:53Z INFO ConfigurationStore] IsConfigured: True
+[2025-10-30 13:05:53Z INFO ConfigurationManager] Is configured: True
+[2025-10-30 13:05:53Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-10-30 13:05:53Z INFO Runner] Set runner startup type - Manual
+[2025-10-30 13:05:53Z INFO CommandSettings] Flag 'once': 'False'
+[2025-10-30 13:05:53Z INFO CommandSettings] Flag 'once': 'False'
+[2025-10-30 13:05:53Z INFO Runner] RunAsync
+[2025-10-30 13:05:53Z INFO ConfigurationManager] LoadMigratedSettings
+[2025-10-30 13:05:53Z INFO ConfigurationStore] IsMigratedConfigured()
+[2025-10-30 13:05:53Z INFO ConfigurationStore] IsMigratedConfigured: False
+[2025-10-30 13:05:53Z INFO Runner] Failed to load migrated settings: No migrated configuration found.
+[2025-10-30 13:05:53Z INFO Runner] Falling back to original .runner settings
+[2025-10-30 13:05:53Z INFO Runner] Using BrokerMessageListener
+[2025-10-30 13:05:53Z INFO BrokerMessageListener] Using provided settings
+[2025-10-30 13:05:53Z INFO BrokerMessageListener] {
+  "AgentId": 2,
+  "AgentName": "DESKTOP-U4FSHMH",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus11.actions.githubusercontent.com/OUcAFdkaLKfp1UXdRR7OhILrA95fL59f9SBv0tVvRb5Xv1bAev/",
+  "GitHubUrl": "https://github.com/DevSecureIT/angular-realworld-example-app",
+  "WorkFolder": "_work",
+  "UseV2Flow": true,
+  "ServerUrlV2": "https://broker.actions.githubusercontent.com/"
+}
+[2025-10-30 13:05:53Z INFO BrokerMessageListener] Loading Credentials
+[2025-10-30 13:05:53Z INFO ConfigurationStore] HasCredentials()
+[2025-10-30 13:05:53Z INFO ConfigurationStore] stored True
+[2025-10-30 13:05:53Z INFO CredentialManager] GetCredentialProvider
+[2025-10-30 13:05:53Z INFO CredentialManager] Creating type OAuth
+[2025-10-30 13:05:53Z INFO CredentialManager] Creating credential type: OAuth
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Bin': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\bin'
+[2025-10-30 13:05:53Z INFO HostContext] Well known directory 'Root': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner'
+[2025-10-30 13:05:53Z INFO HostContext] Well known config file 'RSACredentials': 'C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.credentials_rsaparams'
+[2025-10-30 13:05:53Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.credentials_rsaparams
+[2025-10-30 13:05:53Z INFO BrokerMessageListener] Attempt to create session.
+[2025-10-30 13:05:53Z INFO BrokerMessageListener] Connecting to the Broker Server...
+[2025-10-30 13:05:53Z INFO ConfigurationStore] HasCredentials()
+[2025-10-30 13:05:53Z INFO ConfigurationStore] stored True
+[2025-10-30 13:05:53Z INFO CredentialManager] GetCredentialProvider
+[2025-10-30 13:05:53Z INFO CredentialManager] Creating type OAuth
+[2025-10-30 13:05:53Z INFO CredentialManager] Creating credential type: OAuth
+[2025-10-30 13:05:53Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.credentials_rsaparams
+[2025-10-30 13:05:53Z INFO BrokerMessageListener] VssConnection created
+[2025-10-30 13:05:53Z INFO BrokerMessageListener] Connecting to the Runner server...
+[2025-10-30 13:05:53Z INFO RunnerServer] EstablishVssConnection
+[2025-10-30 13:05:53Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-10-30 13:05:53Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-10-30 13:05:53Z INFO RunnerServer] EstablishVssConnection
+[2025-10-30 13:05:53Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-10-30 13:05:53Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-10-30 13:05:54Z INFO RunnerServer] EstablishVssConnection
+[2025-10-30 13:05:54Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-10-30 13:05:54Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-10-30 13:05:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-10-30 13:05:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-10-30 13:05:54Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-10-30 13:05:54Z INFO BrokerMessageListener] VssConnection created
+[2025-10-30 13:05:54Z INFO Terminal] WRITE LINE: 
+[2025-10-30 13:05:54Z INFO Terminal] WRITE LINE: 
+[2025-10-30 13:05:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.credentials_rsaparams
+[2025-10-30 13:05:54Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.credentials_rsaparams
+[2025-10-30 13:05:55Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-10-30 13:05:55Z INFO BrokerMessageListener] Session created.
+[2025-10-30 13:05:55Z INFO Terminal] WRITE LINE: Current runner version: '2.329.0'
+[2025-10-30 13:05:55Z INFO Terminal] WRITE LINE: 2025-10-30 13:05:55Z: Listening for Jobs
+[2025-10-30 13:05:55Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2025-10-30 13:56:06Z INFO RSAEncryptedFileKeyManager] Loading RSA key parameters from file C:\Users\MogHunter\Desktop\angular-realworld-example-app\actions-runner\.credentials_rsaparams
+[2025-10-30 13:56:06Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown

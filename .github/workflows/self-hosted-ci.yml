@@ -1,0 +1,51 @@
+name: Self-Hosted CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: self-hosted
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Log Node.js version
+      run: node --version
+
+    - name: Cache node modules
+      uses: actions/cache@v3
+      id: npm-cache
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: Install dependencies
+      if: steps.npm-cache.outputs.cache-hit != 'true'
+      run: npm ci
+
+    - name: Run tests
+      run: npm test -- --watch=false --browsers=ChromeHeadless --no-progress
+
+    - name: Build application
+      run: npm run build -- --configuration production
+
+  cleanup:
+    runs-on: self-hosted
+    needs: build-and-test
+    if: always()
+
+    steps:
+    - name: Clean workspace
+      run: |
+        echo "Cleaning workspace to free up disk space"
+        rm -rf node_modules || true
+        rm -rf dist || true
+        npm cache clean --force || true

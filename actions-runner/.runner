@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "DESKTOP-U4FSHMH",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus11.actions.githubusercontent.com/OUcAFdkaLKfp1UXdRR7OhILrA95fL59f9SBv0tVvRb5Xv1bAev/",
+  "gitHubUrl": "https://github.com/DevSecureIT/angular-realworld-example-app",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
